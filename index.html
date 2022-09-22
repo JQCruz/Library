@@ -4,9 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Library</title>
 </head>
 <body>
+    <div id="pageContainer">
+        <div id="headerContainer">
+            <div class="headerContent" id="headerTitle">
+                <p class="" id="library">Library</p>
+            </div>
+            <div class="headerContent" id="logIn">
+                <button id="logInButton" type="button">Log In</button>
+            </div>
+        </div>
+        <div id="contentContainer">
+            <div class="bookCard" id="book1">
+                <div class="cardHeader">
+                    <button type="button" class="remove">delete</button>
+                    <button type="button" class="edit">edit</button>
+                </div>
+                <p id="bookTitle">Myth of sysyphus</p>
+                <p class="bookContent" id="Author">Albert Camus</p>
+                <p class="bookContent" id="numberOfPages">300</p>
+                <p class="bookContent" id="published">1992</p>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="bookCard" id="book2">
+                <div class="cardHeader">
+                    <button type="button" class="remove">x</button>
+                    <button type="button" class="edit"></button>
+                </div>                <p id="bookTitle">Myth of sysyphus</p>
+                <p class="bookContent" id="Author">Albert Camus</p>
+                <p class="bookContent" id="numberOfPages">300</p>
+                <p class="bookContent" id="published">1992</p>
+                button
+            </div>
+            <div class="bookCard" id="book3">
+                <div class="cardHeader">
+                    <button type="button" class="remove">x</button>
+                    <button type="button" class="edit"></button>
+                </div>                <p id="bookTitle">Myth of sysyphus</p>
+                <p class="bookContent" id="Author">Albert Camus</p>
+                <p class="bookContent" id="numberOfPages">300</p>
+                <p class="bookContent" id="published">1992</p>
+                button
+            </div>
+
+            <button class="addBook" type="button">+</button>
+            <div class="addBookModal">
+                <form action="" method="post">
+                    <label for="title">Title*</label>
+                    <input type="text" id="title" required>
+                    <label for="author">author</label>
+                    <input type="text" required id="author">
+                    <label for="pages">pages</label>
+                    <input type="number" id="pages" required>
+                    <label for="publishDate">Publish Date</label>
+                    <input type="number" id="publishDate" type="number">
+                </form>
+            </div>
+        </div>
+    </div>
     <script src="./script.js"></script>
 </body>
 </html>

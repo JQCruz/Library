@@ -18,3 +18,6 @@ hobbit.title = "The Hobbit";
 
 let myLibrary = [hobbit];
 
+// Add card button that add's a new fixed card to the screen
+// Background screen should be out of focus when add book card is present
+// figure out how to make a toggle switch for the card
