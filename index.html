@@ -56,17 +56,20 @@
 
             <button class="addBook" type="button">+</button>
             <div class="addBookModal">
-                <form action="" method="post">
+                <form action="" method="post" class="" id="bookForm">
                     <label for="title">Title*</label>
                     <input type="text" id="title" required>
                     <label for="author">author</label>
-                    <input type="text" required id="author">
+                    <input type="text" id="author" required>
                     <label for="pages">pages</label>
                     <input type="number" id="pages" required>
                     <label for="publishDate">Publish Date</label>
                     <input type="number" id="publishDate" type="number">
+
+                    <button type="submit" id="submitButton"></button>
                 </form>
             </div>
+            <div class="overlay"></div>
         </div>
     </div>
     <script src="./script.js"></script>

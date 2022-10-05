@@ -1,3 +1,7 @@
+html{
+  --card-color: green;
+}
+
 #pageContainer{
     display: grid;
     grid-template-rows: 1fr 8fr;
@@ -13,9 +17,46 @@
     height: 40px;
 }
 
+
 form{
-  display: grid;
+  display: none;
+  z-index: 1;
+  height: 300px;
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  justify-items: center;
+  transform: translate(-50%, -50%);
   grid-template-columns: 2fr 7fr;
+  background-color: white;
+  padding-top: 40px;
+}
+
+
+form input{
+  height: 20%;
+  width: 100%;
+
+}
+
+form.active {
+display: grid;
+grid-template-columns: 2fr 7fr;
+
+}
+
+.overlay.active{
+  display: block;
+}
+
+.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .headerContent{
@@ -25,9 +66,10 @@ form{
 
 #contentContainer{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-template-rows: repeat(auto-fill, 200px);
     justify-items: center;
+    gap: 20px;
 }
 
 .bookCard{
@@ -35,6 +77,8 @@ form{
     justify-items: center;
     grid-template-rows: 1fr 3fr 3fr 3fr 3fr 3fr;
     height: 200px;
+    background-color: var(--card-color);
+    width: 80%;
 
 }
 
